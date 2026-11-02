@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: "\thttp://localhost:8080/Laboratorio6JPA/resources/login"
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"email\": \"laura.prueba@example.com\",\r
+
+      \    \"password\": \"Prueba123\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Server: Eclipse GlassFish 7.1.1
+    X-Powered-By: Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)
+    Content-Type: application/json
+    Content-Length: "115"
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Inicio de sesión exitoso",
+        "surname": "Prueba",
+        "id": 2,
+        "name": "Laura",
+        "email": "laura.prueba@example.com"
+      }
+order: 1000

@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/Laboratorio6JPA/resources/competitors
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Server: Eclipse GlassFish 7.1.1
+    X-Powered-By: Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)
+    Content-Type: application/json
+    Content-Length: "217"
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "address": "Calle 10",
+          "age": 25,
+          "cellphone": "3001234567",
+          "city": "Bogota",
+          "country": "Colombia",
+          "id": 1,
+          "name": "Carlos",
+          "password": "Prueba123",
+          "products": [],
+          "surname": "Rodriguez",
+          "telephone": "6011234567",
+          "winner": false
+        }
+      ]
+order: 1000

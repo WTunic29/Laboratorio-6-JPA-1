@@ -1,0 +1,29 @@
+$kind: http-request
+url: http://localhost:8080/Laboratorio6JPA/resources/competitors
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Laura\",\r
+
+    \    \"surname\": \"Prueba\",\r
+
+    \    \"password\": \"Prueba123\",\r
+
+    \    \"age\": 24,\r
+
+    \    \"telephone\": \"6011234567\",\r
+
+    \    \"cellphone\": \"3009876543\",\r
+
+    \    \"address\": \"laura.prueba@example.com\",\r
+
+    \    \"city\": \"Bogota\",\r
+
+    \    \"country\": \"Colombia\",\r
+
+    \    \"winner\": false\r
+
+    }"
+examples: .resources/registro competidor.resources/examples

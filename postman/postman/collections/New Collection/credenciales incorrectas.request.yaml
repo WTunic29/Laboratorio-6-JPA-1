@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8080/Laboratorio6JPA/resources/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"laura.prueba@example.com\",\r
+
+    \    \"password\": \"Incorrecta123\"\r
+
+    }"
+order: 3000

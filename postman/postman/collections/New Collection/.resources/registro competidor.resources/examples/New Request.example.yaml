@@ -1,0 +1,45 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/Laboratorio6JPA/resources/competitors
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"name\": \"Carlos\",\r
+
+      \    \"surname\": \"Rodriguez\",\r
+
+      \    \"password\": \"Prueba123\",\r
+
+      \    \"age\": 25,\r
+
+      \    \"telephone\": \"6011234567\",\r
+
+      \    \"cellphone\": \"3001234567\",\r
+
+      \    \"address\": \"Calle 10\",\r
+
+      \    \"city\": \"Bogota\",\r
+
+      \    \"country\": \"Colombia\",\r
+
+      \    \"winner\": false\r
+
+      }"
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Server: Eclipse GlassFish 7.1.1
+    X-Powered-By: Servlet/6.0 JSP/3.1(Eclipse GlassFish 7.1.1 Java/Eclipse Adoptium/17)
+    Content-Type: application/json
+    Content-Length: "56"
+  body:
+    type: json
+    content: |-
+      {
+        "message": "Competidor registrado correctamente",
+        "id": 1
+      }
+order: 1000

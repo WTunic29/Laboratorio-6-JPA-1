@@ -1,0 +1,6 @@
+$kind: http-request
+name: New Request
+url: http://localhost:8080/Laboratorio6JPA/resources/competitors
+method: GET
+examples: .resources/New Request-1.resources/examples
+order: 1000

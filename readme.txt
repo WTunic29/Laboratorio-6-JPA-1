@@ -1,0 +1,3 @@
+La anotación `@OneToMany` en la entidad `Competitor` establece una relación de uno a muchos entre los competidores y sus productos, permitiendo que un competidor tenga varios productos asociados. En este proyecto, el atributo `mappedBy = "competitor"` indica que la relación está administrada por el atributo `competitor` de la entidad `Producto`. 
+
+Por tanto, la clave foránea `COMPETITOR_ID` se encuentra en la tabla `PRODUCTO` y referencia al competidor correspondiente en la tabla `COMPETITOR`. La anotación `@OneToMany` no crea por sí sola una columna adicional en `COMPETITOR`; permite que JPA gestione la relación entre ambas entidades.
